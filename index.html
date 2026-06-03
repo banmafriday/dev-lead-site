@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>开发接单素材助手</title>
+  <meta name="description" content="开发接单素材助手是一款面向个人开发者的内容创作辅助工具。">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f8fb;
+      --text: #132033;
+      --muted: #65758b;
+      --line: #e4eaf2;
+      --blue: #2368ff;
+      --green: #12b981;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    header {
+      background: linear-gradient(135deg, #101828 0%, #1d4ed8 58%, #0f766e 100%);
+      color: white;
+      padding: 64px 24px 72px;
+    }
+    .wrap {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 8px 12px;
+      border: 1px solid rgba(255,255,255,.24);
+      border-radius: 999px;
+      background: rgba(255,255,255,.1);
+      font-size: 14px;
+    }
+    h1 {
+      margin: 24px 0 12px;
+      font-size: clamp(36px, 6vw, 64px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .lead {
+      margin: 0;
+      max-width: 760px;
+      color: rgba(255,255,255,.86);
+      font-size: 20px;
+    }
+    main { padding: 48px 24px 72px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin: 28px 0;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 12px 32px rgba(15, 23, 42, .06);
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 28px;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+    p { margin: 0 0 12px; }
+    ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+    .section {
+      margin-top: 34px;
+    }
+    .notice {
+      border-left: 4px solid var(--green);
+      background: #ecfdf5;
+      padding: 18px 20px;
+      border-radius: 12px;
+      color: #064e3b;
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 24px;
+      color: var(--muted);
+      background: white;
+      font-size: 14px;
+    }
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+    @media (max-width: 820px) {
+      .grid { grid-template-columns: 1fr; }
+      header { padding-top: 42px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="badge">内容创作辅助工具</div>
+      <h1>开发接单素材助手</h1>
+      <p class="lead">
+        面向个人开发者和小型技术服务团队，辅助生成开发接单类图文素材、短视频脚本、封面文案、话题标签和私信回复话术。
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section>
+        <h2>应用简介</h2>
+        <div class="card">
+          <p>
+            开发接单素材助手用于帮助开发者更高效地整理和创作服务介绍内容。用户可以围绕小程序开发、网站建设、后台系统、Excel 自动化、AI 客服、老项目维护等服务方向，生成适合发布到短视频和图文平台的内容草稿。
+          </p>
+          <p>
+            本应用仅提供内容创作辅助，不自动发布内容，不自动私信，不自动评论，不进行批量营销操作。
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>主要功能</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>图文素材生成</h3>
+            <p>生成适合开发服务宣传的标题、正文、封面文案和话题标签。</p>
+            <ul>
+              <li>开发接单介绍</li>
+              <li>案例型内容</li>
+              <li>痛点型内容</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>短视频脚本</h3>
+            <p>根据服务方向生成口播脚本、分镜结构和评论区引导语。</p>
+            <ul>
+              <li>15 秒短视频脚本</li>
+              <li>图文视频结构</li>
+              <li>发布标题建议</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>回复话术整理</h3>
+            <p>为咨询场景生成基础回复话术，帮助开发者更清楚地了解需求。</p>
+            <ul>
+              <li>需求收集问题</li>
+              <li>报价前确认项</li>
+              <li>服务边界说明</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>合规说明</h2>
+        <div class="notice">
+          本应用不提供自动群发、自动私信、自动评论、批量关注、批量点赞等能力；不绕过平台登录、验证码或安全策略；生成内容需由用户自行审核后再发布。
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>适用对象</h2>
+        <div class="card">
+          <ul>
+            <li>个人全栈开发者</li>
+            <li>小程序、网站、后台系统开发服务提供者</li>
+            <li>Excel 自动化、AI 自动化、老项目维护服务提供者</li>
+            <li>需要整理服务介绍内容的小型技术团队</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>开发接单素材助手 ｜ 内容创作辅助工具</p>
+      <p>如需联系，请通过应用所有者公开联系方式沟通。</p>
+    </div>
+  </footer>
+</body>
+</html>
